@@ -1,0 +1,323 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+/* ===== body ==0==*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f3f4f6;
+}
+
+/* ======= Navbar Style ===========*/
+.navbar-default {
+  background: #461bff;
+  min-height: 10vh;
+  .logo {
+    color: #fff;
+    font-size: 25px;
+    text-decoration: none;
+  }
+  .navbar-collapse {
+    .dropdown-menu {
+      margin-top: 13px;
+      padding-top: 0;
+      padding-bottom: 0;
+      .dropdown-item {
+        color: #000000;
+        &:hover {
+          background: #20dea3;
+          border-radius: 3px;
+          color: #fff;
+        }
+      }
+    }
+    .nav-link {
+      padding: 0 20px;
+      a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 16px;
+
+        &:hover {
+          border-bottom: 1px solid #fff;
+        }
+      }
+    }
+  }
+
+  .search-box {
+    position: relative;
+    margin: 0 15px 0 60px;
+    form {
+      display: none;
+      transition: 0.5s;
+      .form-group {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 8px 30px;
+        position: absolute;
+        input {
+          border: none;
+          background: #fff;
+          border-radius: 5px;
+          padding: 5px 10px;
+        }
+        button {
+          border-radius: 5px;
+          padding: 5px;
+          background: #20dea3;
+          color: #fff;
+          border: none;
+          margin-left: -30px;
+        }
+      }
+    }
+  }
+  .social-medias {
+    a {
+      padding: 0 20px;
+    }
+  }
+}
+
+/* ========= header style ======*/
+header {
+  .banner {
+    width: 100%;
+    height: 528px;
+    position: relative;
+    margin-top: 70px;
+    img {
+      width: 100%;
+    }
+  }
+  .slick-carousel {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  /* The width of each slide */
+  .slick-slide {
+    width: 350px;
+  }
+
+  /* Color of the arrows */
+  .slick-next::before,
+  .slick-prev::before {
+    color: #461bff;
+  }
+  .cards {
+    margin-top: -325px;
+    .card {
+      border-radius: 15px;
+      margin: 10px;
+      padding: 0;
+      .card-body {
+        height: 200px;
+      }
+      span {
+        color: #2f2f2f;
+        font-size: 14px;
+      }
+      h5 {
+        color: #20dea3;
+        font-size: 22px;
+        font-weight: bold;
+        padding: 15px 0 5px 0;
+      }
+      p {
+        color: #5e5d5d;
+        font-size: 16px;
+      }
+    }
+  }
+  .card-button {
+    text-align: center;
+    .btn-ver-todos {
+      padding: 10px;
+      border: none;
+      background: #6d6e72;
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      width: 282px;
+      border-radius: 30px;
+      margin: 30px;
+      transition: 0.5s;
+      cursor: pointer;
+      &:hover {
+        background: #20dea3;
+        color: #fff;
+      }
+    }
+  }
+}
+
+/* ============ Audiovisual Style ===================*/
+.audiovisual {
+  background: #461bff;
+  margin-top: 30px;
+  padding-bottom: 40px;
+  .text {
+    text-align: center;
+    h2 {
+      padding: 50px 0 30px 0;
+      color: #fff;
+      font-size: 40px;
+    }
+  }
+  .links ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 18px;
+    color: #fff;
+    li {
+      cursor: pointer;
+      padding: 10px;
+      margin-right: 20px;
+      transition: 0.5s;
+      &:hover {
+        background: #20dea3;
+      }
+    }
+    .active {
+      background: #20dea3;
+    }
+  }
+  .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    padding-bottom: 40px;
+
+    img {
+      width: 100%;
+      height: 300px;
+    }
+  }
+}
+
+// ========= Newsletter =================== //
+.newsletter {
+  margin-top: 30px;
+  height: 348px;
+  text-align: center;
+  h2 {
+    font-size: 40px;
+    color: #20dea3;
+    margin-top: 60px;
+  }
+  form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .element {
+      display: flex;
+      text-align: left;
+      flex-direction: column;
+      margin: 20px;
+      input {
+        width: 350px;
+        padding: 10px;
+        border-radius: 27px;
+        border: none;
+      }
+    }
+    button {
+      margin-top: 30px;
+      border-radius: 27px;
+      width: 200px;
+      padding: 10px;
+      border: none;
+      background: #01adff;
+      color: #fff;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.5s;
+      &:hover {
+        background: #461bff;
+      }
+    }
+  }
+}
+
+// =================== Footer style ==================///
+footer {
+  background: #28235c;
+  display: flex;
+  color: #fff;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+// media and screen - mobile //
+/* ======= Media Screen 600px =========*/
+@media only screen and (max-width: 600px) {
+  header {
+    .cards {
+      margin-top: -450px;
+    }
+  }
+  .newsletter {
+    form {
+      flex-direction: column;
+    }
+  }
+  footer {
+    margin-top: 100px;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .navbar-default {
+    .social-medias {
+      display: none;
+    }
+    .search-box {
+      display: none;
+    }
+  }
+}
+/* ======= Media Screen 1024px =========*/
+@media only screen and (max-width: 1024px) {
+  .navbar-default {
+    .search-box {
+      margin-left: 30px;
+
+      a {
+        display: none;
+      }
+      form {
+        display: block;
+        z-index: 1;
+        margin-top: 40px;
+        padding: 20px;
+      }
+    }
+  }
+}
+/* ======= Media Screen 768px =========*/
+@media only screen and (max-width: 768px) {
+  .navbar-default {
+    .social-medias {
+      display: none;
+    }
+    .search-box {
+      display: none;
+    }
+  }
+  .newsletter {
+    form {
+      flex-direction: column;
+    }
+  }
+  footer {
+    margin-top: 80px;
+    padding: 20px;
+  }
+}

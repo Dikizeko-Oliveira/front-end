@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000" />
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.css"
+  />
+    <!-- Stylesheet usando Sass, Scss para Css-->
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Teste Front-End</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark navbar-expand-lg navbar-default fixed-top">
+      <div class="container">
+        <!--Logo-->
+        <a class="logo" href="index.html">LOGO</a>
+        <!--Toggle Button-->
+        <button
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#menu"
+          aria-expanded="false"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ml-md-auto">
+            <li class="nav-link active"><a href="#">Sobre</a></li>
+            <li class="nav-link dropdown">
+                <a class="dropdown-toggle release" href="#" role="button" 
+                id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" 
+                aria-expanded="false">
+                    Releases
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#">Sub Canal 1</a>
+                    <a class="dropdown-item" href="#">Sub Canal 2</a>
+                    <a class="dropdown-item" href="#">Sub Canal 3</a>
+                    <a class="dropdown-item" href="#">Sub Canal 4</a>
+                </div>
+            </li>
+            <li class="nav-link"><a href="#">Audiovisual</a></li>
+            <li class="nav-link"><a href="#">Saíu na mídia</a></li>
+            <li class="nav-link"><a href="#">Contato</a></li>
+          </ul>
+        </div>
+        <div class="search-box">
+            <a href="#" class="search-button" ><img src="./images/Search.png" alt=""></a>
+            <form>
+                <div class="form-group">
+                    <input type="text" name="search" placeholder="digite sua busca">
+                    <button type="submit">OK</button>
+                </div>
+            </form>
+        </div>
+        <div class="social-medias">
+          <a href="#"><img src="./images/Group 244.png" alt=""/></a>
+          <a href="#"><img src="./images/facebook.png" alt=""/></a>
+          <a href="#"><img src="./images/Group 8519.png" alt=""/></a>
+          <a href="#"><img src="./images/Path 1954.png" alt=""/></a>
+        </div>
+      </div>
+    </nav>
+    <!--Header-->
+    <header>
+        <div class="banner">
+            <img src="./images/Banner.png" alt="">
+        </div>
+        <div class="container">
+            <div class="row cards slick-carousel">
+                <div class="col-lg-4 col-12">
+                    <div class="card">
+                        <div class="card-body ">
+                            <span>23 de Junho de 2018</span>
+                            <h5>Resgate Saúde Resgate </h5>
+                            <p>Com cobertura em todo o território  nacional, possui a mais moderna... 
+                            </p>
+                        </div>
+                        <img src="./images/Mask Group 8.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <div class="card">
+                        <div class="card-body ">
+                            <span>23 de Junho de 2018</span>
+                            <h5>Resgate Saúde Resgate </h5>
+                            <p>Com cobertura em todo o território  nacional, possui a mais moderna... 
+                            </p>
+                        </div>
+                        <img src="./images/Mask Group 8.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <span>23 de Junho de 2018</span>
+                            <h5>Resgate Saúde Resgate </h5>
+                            <p>Com cobertura em todo o território  nacional, possui a mais moderna...                            
+                            </p>
+                        </div>
+                        <img src="./images/Mask Group 8.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <span>23 de Junho de 2018</span>
+                            <h5>Resgate Saúde Resgate </h5>
+                            <p>Com cobertura em todo o território  nacional, possui a mais moderna...                            
+                            </p>
+                        </div>
+                        <img src="./images/Mask Group 8.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <span>23 de Junho de 2018</span>
+                            <h5>Resgate Saúde Resgate </h5>
+                            <p>Com cobertura em todo o território  nacional, possui a mais moderna...                            
+                            </p>
+                        </div>
+                        <img src="./images/Mask Group 8.png" alt="">
+                    </div>
+                </div>
+                
+            </div>
+            <!-- Botão ver todos -->
+            <div class="card-button">
+                <button class="btn-ver-todos">Ver Todos</button>
+            </div>
+        </div>
+    </header>
+    <!--Audiovisual-->
+    <div class="audiovisual">  
+        <div class="text">
+            <h2>Audiovisual</h2>
+        </div>
+        <div class="container">
+            <div class="links">
+                <ul>
+                    <li class="active">Todos</li>
+                    <li>Carros</li>
+                    <li id="last">Natureza</li>
+                </ul>
+            </div>
+            <div class="content">
+                <!-- conteúdo -->
+                
+            </div>
+        </div>
+    </div>
+    <!--Newsletter-->
+    <div class="newsletter">
+        <h2>Receba Nossos Comunicados</h2>
+        <form>
+            <div class="element">
+                <label>Nome</label>
+                <input type="text">
+            </div>
+            <div class="element">
+                <label>Email</label>
+                <input type="email">
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+  
+    <!--Footer-->
+    <footer>
+        <p>Company Name 2019 - Todos os direitos reservados</p>
+        <img src="./images/Group 8587.png" alt="">
+    </footer>
+    <!-- Scripts-->
+    <script src="./js/index.js"></script>
+    <script src="./js/jquery-3.3.1.slim.min.js"></script>
+    <script src="./js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+  </body>
+</html>
